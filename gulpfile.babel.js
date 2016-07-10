@@ -5,6 +5,7 @@ import requireDir from 'require-dir';
 
 const plugins = gulpLoadPlugins();
 
+
 requireDir('./gulp/tasks/dev');
 requireDir('./gulp/tasks/prod');
 
@@ -14,8 +15,9 @@ gulp.task('build:js:dev', (callback) => {
 
 gulp.task('build:dev', (callback) => {
     runSequence('clean:dev',
-    ['build:assets:dev', 'build:html:dev', 'build:sass:dev', 'build:js:dev', 'copy:systemjs:dev'],
-'build:index:dev',
+    ['build:assets:dev', 'build:html:dev', 'build:sass:dev', 'build:js:dev',
+     'copy:systemjs:dev'],
+     'build:index:dev',
     callback);
 });
 
@@ -30,11 +32,11 @@ gulp.task('build:prod', (callback) => {
     'template:html:prod',
     'template:sass:prod',
     'template:ts:prod'],
-'karma:ts:prod',
+    'karma:ts:prod',
     'karma:prod',
     'build:ts:prod',
     'clean:tests:prod',
     ['bundles.libs.prod', 'bundles.app.prod', 'bundle:css:prod', 'bundle:libs:css:prod'],
-    'build:index:prod',
+    'build:index:prod','build:package:prod',
     callback);
 });

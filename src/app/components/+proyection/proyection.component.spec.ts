@@ -7,7 +7,7 @@ import {
     inject
 } from "@angular/core/testing";
 import {getDOM} from "@angular/platform-browser/src/dom/dom_adapter";
-import {AboutComponent} from "./about.component";
+import {ProyectionComponent} from "./proyection.component";
 
 export function main() {
     describe('About component', () => {
@@ -15,7 +15,7 @@ export function main() {
 
         it('should work',
             inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-                tcb.createAsync(AboutComponent)
+                tcb.createAsync(ProyectionComponent)
                     .then((rootTC:any) => {
                         let aboutDOMEl = rootTC.debugElement.children[0].nativeElement;
 
@@ -27,7 +27,7 @@ export function main() {
 
 @Component({
     selector: 'test-cmp',
-    directives: [AboutComponent],
+    directives: [ProyectionComponent],
     template: '<sd-about></sd-about>'
 })
 class TestComponent {

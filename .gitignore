@@ -2,7 +2,8 @@
 
 typings/
 dist/
-
+package/
+coverage/
 
 ### Linux template
 *~
