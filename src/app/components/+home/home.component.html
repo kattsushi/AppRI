@@ -13,55 +13,111 @@
     <th class="tg-l135">Ver tabla</th>
     <th class="tg-rkwu"></th>
     <th class="tg-t2g0">Facturacion diaria</th>
-    <th class="tg-rkwu"></th>
+    <th class="tg-rkwu">
+      {{factDiaria}}
+    </th>
   </tr>
   <tr>
     <td class="tg-r5us">Costo<br>  del espejo</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="costoEspejo"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Facturacion Mensual</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      {{factMensual}}
+    </td>
   </tr>
   <tr>
     <td class="tg-r5us">Número<br>  de Espejos</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="numEspejo"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Facturación<br>  Anual</td>
-    <td class="tg-o4jq"></td>
+    <td class="tg-o4jq">
+      {{factAnual}}
+    </td>
   </tr>
   <tr>
     <td class="tg-r5us">Inversión<br>  Inicial</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="invInicial"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Facturación<br>  Anual luego de impuestos</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      {{factAnualImp}}
+    </td>
   </tr>
   <tr>
     <td class="tg-r5us">Cantidad<br>  de anunciantes</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="cantAnunc"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Inversión<br>  Inicial</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      {{invInicial}}
+    </td>
   </tr>
   <tr>
     <td class="tg-r5us">Porcentaje<br>  de la Sociedad</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="porcSociedad"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Mes<br>  estimado del Retorno de inversión</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      {{mesEstiReIn}}
+    </td>
   </tr>
   <tr>
     <td class="tg-r5us">Impuestos</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="porcImpues"
+             >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-t2g0">Ganancia<br>  a los 24 meses</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      {{gananciaMes}}
+    </td>
   </tr>
   <tr>
     <td class="tg-pkbk" colspan="3">Tarifa tipo A</td>
@@ -71,21 +127,42 @@
   </tr>
   <tr>
     <td class="tg-rkwu" colspan="2">Costo Diario</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+          class="form-control"
+          type="number" 
+          required
+          [(ngModel)]="costoDiario"
+        >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
   </tr>
   <tr>
     <td class="tg-rkwu" colspan="2">Cantidad de Espejos donde <br>se mostrara la publicidad</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+          class="form-control"
+          type="number" 
+          required
+          [(ngModel)]="cantEspePub"
+        >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
   </tr>
   <tr>
     <td class="tg-rkwu" colspan="2">Tiempo de contrato</td>
-    <td class="tg-rkwu"></td>
+    <td class="tg-rkwu">
+      <input type="text" 
+             class="form-control"
+             type="number" 
+             required
+             [(ngModel)]="tiempContrato"
+            >
+    </td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>
     <td class="tg-rkwu"></td>

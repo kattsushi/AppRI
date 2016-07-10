@@ -1,10 +1,12 @@
 import {Component} from "@angular/core";
+import { NgForm }    from '@angular/common';
 
 @Component({
     selector: 'home',
     moduleId: module.id,
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css']
+    styleUrls: ['./home.component.css'],
+    directives: [NgForm]
 })
 export class HomeComponent {
     // Variables de Entrada:
@@ -19,11 +21,13 @@ export class HomeComponent {
     public tiempContrato:number;    // Tiempo de contrato (meses)
 
     // Variables de Salida
-    public factDiaria:number;
-    public factMensual:number;
-    public factAnual:number;
-    public mesEstiReIn:number;
+    public factDiaria   :number;    // Facturacion diaria	
+    public factMensual  :number;    // Facturacion Mensual	
+    public factAnual    :number;    // Facturación Anual
+    public factAnualImp :number;    // Facturación Anual luego de impuestos  
+    public mesEstiReIn  :number;    // Mes estimado del Retorno de inversión 
+    public gananciaMes  :number;    // Ganancia a los 24 meses
     constructor(){
-        
+
     }
 }
