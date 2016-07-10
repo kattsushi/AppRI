@@ -10,7 +10,7 @@ export const INDEX                = 'index.html';
 export const DIST_DIR             = 'dist';
 export const SRC_DIR              = 'src';
 export const SRC_ELECTRON         = 'electron';
-export const DIST_PACKAGE          = 'package';    
+export const DIST_PACKAGE         = 'package';    
 export const APP_SRC              = path.join(SRC_DIR, 'app');
 export const STYLES_SRC           = path.join(SRC_DIR, 'styles');
 export const ASSETS_SRC           = path.join(SRC_DIR, 'assets');
@@ -35,14 +35,16 @@ export const JS_NPM_DEPENDENCIES = [
     
     {src: 'node_modules/tether-1.3.1/dist/js/tether.js', inject: 'libs'},
     {src: 'node_modules/jquery/dist/jquery.js', inject: 'libs'},
-    {src: 'node_modules/bootstrap/dist/js/bootstrap.js', inject: 'libs'},
-
+    // {src: 'node_modules/bootstrap/dist/js/bootstrap.js', inject: 'libs'},        
+    {src: 'node_modules/metro-dist/js/metro.min.js', inject: 'libs'},
+    
     {src: 'node_modules/systemjs/dist/system.src.js', inject: 'libs'}
 ];
 
 export const CSS_NPM_DEPENDENCIES = [
     
-    {src: 'node_modules/font-awesome/css/font-awesome.min.css', inject: 'libs'}
+    {src: 'node_modules/font-awesome/css/font-awesome.min.css', inject: 'libs'},
+    {src: 'node_modules/metro-dist/css/metro.min.css', inject: 'libs'}
 
 ];
 

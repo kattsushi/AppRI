@@ -15,7 +15,6 @@ electron.app.on('ready', function() {
  
   mainWindow = new electron.BrowserWindow({ width: 1200, height: 750 });
   mainWindow.loadURL(`file://${__dirname}/index.html`);
-  console.log(___dirname);
  
   mainWindow.webContents.openDevTools();
  

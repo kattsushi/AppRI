@@ -1,170 +1,201 @@
-<table class="tg" style="undefined;table-layout: fixed; width: 714px">
-<colgroup>
-<col style="width: 109px">
-<col style="width: 99px">
-<col style="width: 102px">
-<col style="width: 93px">
-<col style="width: 206px">
-<col style="width: 105px">
-</colgroup>
-  <tr>
-    <th class="tg-l135">Informacion</th>
-    <th class="tg-l135">Cantidad</th>
-    <th class="tg-l135">Ver tabla</th>
-    <th class="tg-rkwu"></th>
-    <th class="tg-t2g0">Facturacion diaria</th>
-    <th class="tg-rkwu">
-      {{factDiaria}}
-    </th>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Costo<br>  del espejo</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="costoEspejo"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Facturacion Mensual</td>
-    <td class="tg-rkwu">
-      {{factMensual}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Número<br>  de Espejos</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="numEspejo"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Facturación<br>  Anual</td>
-    <td class="tg-o4jq">
-      {{factAnual}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Inversión<br>  Inicial</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="invInicial"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Facturación<br>  Anual luego de impuestos</td>
-    <td class="tg-rkwu">
-      {{factAnualImp}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Cantidad<br>  de anunciantes</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="cantAnunc"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Inversión<br>  Inicial</td>
-    <td class="tg-rkwu">
-      {{invInicial}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Porcentaje<br>  de la Sociedad</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="porcSociedad"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Mes<br>  estimado del Retorno de inversión</td>
-    <td class="tg-rkwu">
-      {{mesEstiReIn}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-r5us">Impuestos</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="porcImpues"
-             >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-t2g0">Ganancia<br>  a los 24 meses</td>
-    <td class="tg-rkwu">
-      {{gananciaMes}}
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-pkbk" colspan="3">Tarifa tipo A</td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-  </tr>
-  <tr>
-    <td class="tg-rkwu" colspan="2">Costo Diario</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-          class="form-control"
-          type="number" 
-          required
-          [(ngModel)]="costoDiario"
-        >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-  </tr>
-  <tr>
-    <td class="tg-rkwu" colspan="2">Cantidad de Espejos donde <br>se mostrara la publicidad</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-          class="form-control"
-          type="number" 
-          required
-          [(ngModel)]="cantEspePub"
-        >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-  </tr>
-  <tr>
-    <td class="tg-rkwu" colspan="2">Tiempo de contrato</td>
-    <td class="tg-rkwu">
-      <input type="text" 
-             class="form-control"
-             type="number" 
-             required
-             [(ngModel)]="tiempContrato"
-            >
-    </td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-    <td class="tg-rkwu"></td>
-  </tr>
-</table>
+<div class="grid" >
+  <div class="row cells3">
+    <div class="cell">
+      <div class="panel">
+        <div class="heading">
+            <span class="icon mif-home"></span>
+            <span class="title">Inversion</span>
+        </div>
+        <div class="content padding30">
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Costo del espejo</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <input type="number"
+                       [(ngModel)]="costoEspejo">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Numero de Espejos</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <input type="number"
+                       [(ngModel)]="numEspejo">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Inversion Inicial</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <input type="number"
+                       [(ngModel)]="invInicial">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell colspan2">
+      <div class="panel">
+        <div class="heading">
+            <span class="icon mif-home"></span>
+            <span class="title">Costos y Publicidad</span>
+        </div>
+        <div class="content padding30">
+          <div class="grid">
+            <div class="row cells2">
+              <div class="cell">
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Cantidad de anunciantes</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <input type="number">
+                  </div>
+                </div>
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Porcentaje de la Sociedad</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <input type="number"
+                             [(ngModel)]="porcSociedad">
+                  </div>
+                </div>
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Impuestos</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <input type="number"
+                             [(ngModel)]="porcImpues">
+                  </div>
+                </div>
+              </div>
+              <div class="cell">
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Costo diario</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <p>{{costoDiario}}</p>
+                      <input type="number"
+                             [(ngModel)]="costoDiario">
+                  </div>
+                </div>
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Cantidad de Espejos donde se mostrara la publicidad</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <input type="number"
+                             [(ngModel)]="cantEspePub">
+                  </div>
+                </div>
+                <div class="row cells2">
+                  <label for="" class="cell">
+                    <h6>Tiempo de contrato</h6>
+                  </label>
+                  <div class="input-control text cell " data-role="input">
+                      <input type="number"
+                             [(ngModel)]="tiempContrato">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row cells3">
+    <div class="cell">
+      <div class="panel">
+        <div class="heading">
+            <span class="icon mif-home"></span>
+            <span class="title">Facturacion</span>
+        </div>
+        <div class="content padding20">
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Facturacion diaria</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{factDiaria}}</p>
+                <input type="number">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Facturacion Mensual</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{factMensual}}</p>
+                <input type="number">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Facturación Anual</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{factAnual}}</p>
+                <input type="number">
+            </div>
+           </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Facturación Anual luego de impuestos</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <input type="number">
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell colspan2">
+      <div class="panel">
+        <div class="heading">
+            <span class="icon mif-home"></span>
+            <span class="title">Ganancia</span>
+        </div>
+        <div class="content padding20">
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>	Inversión Inicial</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{invInicial}}</p>
+                <input type="number">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Mes estimado del Retorno de inversión</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{mesEstiReIn}}</p>
+                <input type="number">
+            </div>
+          </div>
+          <div class="row cells2">
+            <label for="" class="cell">
+              <h6>Ganancia a los 24 meses</h6>
+            </label>
+            <div class="input-control text cell " data-role="input">
+                <p>{{gananciaMes}}</p>
+                <input type="number">
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
