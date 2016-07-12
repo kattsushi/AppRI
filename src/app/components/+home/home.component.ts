@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import { NgForm }    from '@angular/common';
+import { NgForm }    from "@angular/common";
 // import { DatosService } from '../../shared/service/src/datos.service';
 
 @Component({
@@ -9,18 +9,6 @@ import { NgForm }    from '@angular/common';
     styleUrls: ['./home.component.css'],
     directives: [NgForm]
 })
-
-// export interface datosInterface {
-//      costoEspejo  :number;    // Costo del espejo
-//      numEspejo    :number;    // Número de Espejos
-//      invInicial   :number;    // Inversión Inicial
-//      cantAnunc    :number;    // Cantidad de anunciantes
-//      porcSociedad :number;    // Porcentaje de la Sociedad
-//      porcImpues   :number;    // Impuestos
-//      costoDiario  :number;    // Costo  diario
-//      cantEspePub  :number;    // Cantidad de Espejos donde se mostrara la publicidad
-//      tiempContrato:number;    // Tiempo de contrato (meses)
-// }
 
 export class HomeComponent {
     // Variables de Entrada:
@@ -35,20 +23,28 @@ export class HomeComponent {
     public tiempContrato:number;    // Tiempo de contrato (meses)
 
     // Variables de Salida
-    public factDiaria   :number;    // Facturacion diaria	
-    public factMensual  :number;    // Facturacion Mensual	
+    public factDiaria   :number;    // Facturacion diaria
+    public factMensual  :number;    // Facturacion Mensual
     public factAnual    :number;    // Facturación Anual
-    public factAnualImp :number;    // Facturación Anual luego de impuestos  
-    public mesEstiReIn  :number;    // Mes estimado del Retorno de inversión 
+    public factAnualImp :number;    // Facturación Anual luego de impuestos
+    public mesEstiReIn  :number;    // Mes estimado del Retorno de inversión
     public gananciaMes  :number;    // Ganancia a los 24 meses
 
     private i :number;
-    
+
     constructor(){
-        
+        this.invInic();
+        this.invInicial = this.invInic();
     }
 
-    onProyec(){
-        
+    onProyec(): void {
+
+    }
+
+    invInic(): number {
+        this.invInicial = this.costoEspejo * this.numEspejo;
+        if (!isNaN(this.invInicial)){
+            return this.invInicial;  
+        }
     }
 }

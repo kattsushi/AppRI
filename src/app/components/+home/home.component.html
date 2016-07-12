@@ -1,4 +1,4 @@
-<div class="tabcontrol" 
+<div class="tabcontrol"
      data-role="tabcontrol"
      data-on-tab-click="tab_click"
      data-on-tab-change="tab_change">
@@ -23,8 +23,9 @@
                         <h6>Costo del espejo</h6>
                       </label>
                       <div class="input-control text cell " data-role="input">
-                          <input type="number"
-                                [(ngModel)]="costoEspejo">
+                          <input  type="number"
+                                  [(ngModel)]="costoEspejo"
+                                  (change)="invInic()">
                       </div>
                     </div>
                     <div class="row cells2">
@@ -33,7 +34,8 @@
                       </label>
                       <div class="input-control text cell " data-role="input">
                           <input type="number"
-                                [(ngModel)]="numEspejo">
+                                 [(ngModel)]="numEspejo"
+                                 (change)="invInic()">
                       </div>
                     </div>
                     <div class="row cells2">
@@ -41,8 +43,9 @@
                         <h6>Inversion Inicial</h6>
                       </label>
                       <div class="input-control text cell " data-role="input">
-                          <input type="number"
-                                [(ngModel)]="invInicial">
+                          <p>
+                            {{invInicial}}
+                          </p>
                       </div>
                     </div>
                   </div>
@@ -203,7 +206,7 @@
 
 
         </div>
-        
+
         <div class="frame" id="frame_id2">
           <div class="panel">
             <div class="heading">
