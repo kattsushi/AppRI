@@ -10,6 +10,10 @@ import { NgForm }    from "@angular/common";
     directives: [NgForm]
 })
 
+Iproyec interface {
+    
+}
+
 export class HomeComponent {
     // Variables de Entrada:
     public costoEspejo  :number;    // Costo del espejo
@@ -32,12 +36,12 @@ export class HomeComponent {
 
     private i :number;
 
-    constructor(){
+        constructor(){
         this.invInic();
         this.invInicial = this.invInic();
     }
 
-    onProyec(): void {
+        onProyec(): void {
 
     }
 
@@ -46,5 +50,10 @@ export class HomeComponent {
         if (!isNaN(this.invInicial)){
             return this.invInicial;  
         }
+    }
+
+    genProyec(): Array<any> {
+        
+        return [];
     }
 }
